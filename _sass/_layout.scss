@@ -1,6 +1,10 @@
 $mobile: new-breakpoint(max-width 700px 4);
 $first-menu-breakpoint: new-breakpoint(max-width 1020px 4);
 
+h1, h2, h3 {
+  font-weight: 700;
+}
+
 body {
   width: 100%;
   padding: 10px;
@@ -354,6 +358,7 @@ hr {
 .small-container {
   @include span-columns(6);
   @include shift(3);
+  font-size: 14px;
 
   @include media($mobile) {
     @include shift(0);
@@ -373,4 +378,21 @@ hr {
     font-weight: 700;
     color: #000;
   }
+}
+
+ol {
+  list-style-type: upper-alpha;
+
+  li {
+    margin: 15px 0;
+  }
+}
+
+.bold {
+  font-weight: 700;
+}
+
+.center-items {
+  text-align: center;
+  margin: 30px 0;
 }
